@@ -290,7 +290,8 @@ export default {
     onMounted(() => {
       // Load the Google Maps API script
       const script = document.createElement('script');
-      script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap`;
+
+      script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyCpPZ5VaccQKQRM0WqSd6CRfKa8BrGq6ns&callback=initMap`;
       script.defer = true;
       script.async = true;
       script.onload = () => {
@@ -309,6 +310,7 @@ export default {
 #map {
   width: 100%;
   height: 100vh;
+  position: initial!important;
 }
 
 .gmnoprint, .gm-control-active {
