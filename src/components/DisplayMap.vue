@@ -1,6 +1,8 @@
 <template>
   <div id="map">
   </div>
+
+  <h1>TROUVE TON CLUB!</h1>
 </template>
 
 <script>
@@ -311,7 +313,19 @@ export default {
   width: 100%;
   height: 100vh;
   position: initial!important;
+  text-transform: uppercase;
 }
+
+h1{
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  position: absolute;
+  top: 0;
+  color: white;
+  font-size: 45px;
+}
+
 
 .gmnoprint, .gm-control-active {
   display: none;
