@@ -8,7 +8,7 @@ import { onMounted } from 'vue';
 import json from '../../mock.json';
 
 export default {
-  name: 'Map',
+  name: 'DisplayMap',
 
   setup() {
     const initMap = async () => {

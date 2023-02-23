@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Map/>
+    <DisplayMap/>
   </div>
 </template>
 
@@ -9,7 +9,7 @@
 export default {
   name: 'Home',
   components: {
-    Map
+    DisplayMap
   }
 }
 </script>
