@@ -269,7 +269,7 @@ export default {
         console.log(city.lat)
         const marker = new window.google.maps.Marker({
           position: { lat: city.lat, lng: city.lng },
-     /*     icon: '../assets/sm_gant.png',*/
+          icon: '../assets/sm_gant.png',
           map,
         });
 
