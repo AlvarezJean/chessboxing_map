@@ -10,7 +10,7 @@
 
 <script>
 import { onMounted } from 'vue';
-import json from '../../mock.json';
+import json from '../assets/mock.json';
 
 export default {
   name: 'DisplayMap',
@@ -269,19 +269,19 @@ export default {
         console.log(city.lat)
         const marker = new window.google.maps.Marker({
           position: { lat: city.lat, lng: city.lng },
-          icon: '../src/assets/sm_gant.png',
+     /*     icon: '../assets/sm_gant.png',*/
           map,
         });
 
         const content = `
         <div class="modal">
-        <img src="../src/assets/echecs_mat.png"/>
+        <img src="../assets/echecs_mat.png"/>
         <div class="info">
           <h3>${ city.name }</h3>
-          <p>  <img class="icon" src="../src/assets/map.png"/><span>${ city.address }</span></p>
-          <a href="tel:${ city.phone }">  <img class="icon" src="../src/assets/phone.png"/> <span>${ city.phone }</span></a>
+          <p>  <img class="icon" src="../assets/map.png"/><span>${ city.address }</span></p>
+          <a href="tel:${ city.phone }">  <img class="icon" src="../assets/phone.png"/> <span>${ city.phone }</span></a>
 
-          <a target="_blank" href="${ city.website }"> <img class="icon" src="../src/assets/web.png"/> <span>Site Web</span></a>
+          <a target="_blank" href="${ city.website }"> <img class="icon" src="../assets/web.png"/> <span>Site Web</span></a>
           </div>
           </div>
         `;
