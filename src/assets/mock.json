@@ -6,4 +6,23 @@
   "address": "84 Rue Curial, 75019 Paris",
   "phone": "0756837653",
   "website": "https://chessboxingparis.com/"
-}]
+},
+  {
+    "city": "TOULOUSE",
+    "lat": 43.604652,
+    "lng": 1.444209,
+    "name":"Chess Boxing Toulouse",
+    "address": "26 rue Caravelle , Toulouse, France",
+    "phone": "0659045837",
+    "website": "https://www.facebook.com/chessboxingtoulouse/"
+  },
+  {
+    "city": "NANTES",
+    "lat": 47.218371,
+    "lng": -1.553621,
+    "name":"Nantes ChessBoxing",
+    "address": "39 Rue Félix Thomas, 44000 Nantes",
+    "phone": "-",
+    "website": "https://www.cercle-echecs-nantes.org/pages/actualites/chessboxing.html"
+  }
+]
