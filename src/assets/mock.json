@@ -3,7 +3,7 @@
   "lat": 48.856614,
   "lng": 2.3522219,
   "name":"Chess Boxing Paris",
-  "address": "84 Rue Curial, 75019 Paris",
+  "address": "84 Rue Curial",
   "phone": "0756837653",
   "website": "https://chessboxingparis.com/"
 },
@@ -12,7 +12,7 @@
     "lat": 43.604652,
     "lng": 1.444209,
     "name":"Chess Boxing Toulouse",
-    "address": "26 rue Caravelle , Toulouse, France",
+    "address": "26 rue Caravelle",
     "phone": "0659045837",
     "website": "https://www.facebook.com/chessboxingtoulouse/"
   },
@@ -21,8 +21,26 @@
     "lat": 47.218371,
     "lng": -1.553621,
     "name":"Nantes ChessBoxing",
-    "address": "39 Rue Félix Thomas, 44000 Nantes",
+    "address": "39 Rue Félix Thomas",
     "phone": "-",
     "website": "https://www.cercle-echecs-nantes.org/pages/actualites/chessboxing.html"
+  },
+  {
+    "city": "MONT-BELIARD",
+    "lat": 47.5167,
+    "lng": 6.8,
+    "name":"Chessboxing Montbéliard",
+    "address": "rue Claude Debussy",
+    "phone": "-",
+    "website": "https://www.facebook.com/people/Chessboxing-Montb%C3%A9liard/100054410922483/"
+  },
+  {
+    "city": "Villiers-le-Bel",
+    "lat": 49.009399,
+    "lng": 2.391100,
+    "name":"Carre Clay",
+    "address": "11 Av. des Érables",
+    "phone": "0782976976",
+    "website": "https://carreclay.com/"
   }
 ]

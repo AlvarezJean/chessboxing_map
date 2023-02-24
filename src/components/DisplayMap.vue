@@ -3,7 +3,7 @@
   </div>
 
   <div class="header">
-    <img src="../assets/LOGO_BLASON_FEDE_CHESSBOXING_BLANC.png"/>
+    <img class="logo" src="../assets/LOGO_BLASON_FEDE_CHESSBOXING_BLANC.png"/>
     <h1>TROUVE TON CLUB!</h1>
   </div>
 </template>
@@ -17,7 +17,6 @@ export default {
 
   setup() {
     const initMap = async () => {
-
       const map = new window.google.maps.Map(document.getElementById('map'), {
         zoom: 6,
         center: { lat: 46.2276, lng: 2.2137 },
@@ -266,7 +265,6 @@ export default {
       const cities = await getCities();
 
       cities.forEach(city => {
-        console.log(city.lat)
         const marker = new window.google.maps.Marker({
           position: { lat: city.lat, lng: city.lng },
           icon: '../assets/sm_gant.png',
@@ -327,11 +325,9 @@ export default {
   text-transform: uppercase;
 }
 
-
 img {
-  width: 10px;
+  width: 135px;
 }
-
 
 .header {
   display: flex;
@@ -351,16 +347,16 @@ h1 {
   color: white;
   font-size: 45px;
   transform: rotate(-8deg);
-
 }
 
-img {
+.logo {
   width: 150px;
 }
 
 a {
   color: white;
-  font-family: "Lato", sans-serif;margin-bottom: 10px;
+  font-family: "Lato", sans-serif;
+  margin-bottom: 10px;
 }
 
 a:hover {
@@ -374,27 +370,26 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 428px;
+  width: 410px;
   height: 120px;
   flex-direction: row;
 }
 
-span{
-  margin-left:5px;
+span {
+  margin-left: 5px;
 }
 
-p, a{
-  display: flex;
+p, a {
+  display: flex;align-items: center;
 }
 
 .icon {
   width: 15px;
 }
 
-
 h3 {
   margin-top: 0;
-  font-size: 22px;
+  font-size: 19px;
   font-style: italic;
 }
 
@@ -411,13 +406,55 @@ h3 {
   border-radius: 3px !important;
   padding: 30px !important;
   top: 250px;
-  position: absolute!important;
-  z-index: 999!important;
+  position: absolute !important;
+  z-index: 999 !important;
   background: rgb(178, 36, 67);
   background: linear-gradient(120deg, rgba(178, 36, 67, 1) 0%, rgba(20, 66, 104, 1) 100%, rgba(0, 212, 255, 1) 100%);
 }
 
 .gm-style-iw-tc::after {
   display: none;
+}
+
+@media (max-width: 720px) {
+
+  .logo {
+    width: 50px;
+  }
+
+  h1 {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    color: white;
+    font-size: 23px;
+    transform: rotate(-8deg);
+  }
+
+  .modal {
+    width: 220px;
+    flex-direction: column;
+  }
+
+  .gm-style .gm-style-iw-c {
+    height: 270px;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h3 {
+    font-size: 17px;
+  }
+
+  p {
+    display: initial;
+  }
+  img {
+    width: 50px;
+  }
+
 }
 </style>
