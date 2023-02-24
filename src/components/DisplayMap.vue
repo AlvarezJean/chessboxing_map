@@ -341,6 +341,7 @@ img {
   align-items: center;
   left: 25%;
   width: 50%;
+  z-index: 2;
 }
 
 h1 {
@@ -409,9 +410,11 @@ h3 {
 .gm-style .gm-style-iw-c {
   border-radius: 3px !important;
   padding: 30px !important;
-  top: 300px;
+  top: 250px;
+  position: absolute!important;
+  z-index: 999!important;
   background: rgb(178, 36, 67);
-  background: linear-gradient(90deg, rgba(178, 36, 67, 1) 0%, rgba(20, 66, 104, 1) 100%, rgba(0, 212, 255, 1) 100%);
+  background: linear-gradient(120deg, rgba(178, 36, 67, 1) 0%, rgba(20, 66, 104, 1) 100%, rgba(0, 212, 255, 1) 100%);
 }
 
 .gm-style-iw-tc::after {
