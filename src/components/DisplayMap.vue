@@ -263,7 +263,7 @@ export default {
       });
 
       const cities = await getCities();
-
+      let activeInfoWindow;
       cities.forEach(city => {
         const marker = new window.google.maps.Marker({
           position: { lat: city.lat, lng: city.lng },
@@ -287,9 +287,10 @@ export default {
         const infowindow = new window.google.maps.InfoWindow({
           content,
         });
-
         marker.addListener('click', () => {
+          if (activeInfoWindow) { activeInfoWindow.close();}
           infowindow.open(map, marker);
+          activeInfoWindow = infowindow;
         });
       });
     };
